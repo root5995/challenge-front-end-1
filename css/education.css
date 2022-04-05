@@ -1,0 +1,64 @@
+.education {
+    background-color: #EAF2FD;
+
+}
+
+.education-list {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.education-list__items {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container {
+    height: 100%;
+    background-color: white;
+    display: flex;
+    padding: 2rem 2rem;
+    align-items: center;
+}
+
+.education-list__items img {
+    width: 100%;
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .education-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .education-list__items {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .img-container {
+        justify-content: center;
+    }
+
+    .education-list__items img {
+        width: 100px;
+        align-self: center;
+    
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .img-container {
+        height: 120px;
+
+    }
+
+  }

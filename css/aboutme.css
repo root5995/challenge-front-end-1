@@ -1,0 +1,22 @@
+.aboutme {
+
+    background-color: #EAF2FD;
+    display: flex;
+}
+
+.aboutme-text {
+    width: 60%;
+}
+
+.aboutme-title {
+    text-align: start;
+
+} 
+
+@media screen and (max-width: 768px) {
+
+    .aboutme-text {
+        width: 100%;
+    }
+
+  }

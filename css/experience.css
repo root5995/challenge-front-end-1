@@ -1,0 +1,49 @@
+.experience-list__items {
+    display: flex;
+    margin-bottom: 2.5rem;
+}
+
+
+
+.experience-description__subtitle {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+
+.experience-description p {
+    margin-bottom: 2rem;
+}
+.experience-description {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.experience-list__items img{
+    min-width: 60%;
+    background-color: white;
+}
+
+@media screen and (min-width: 1200px) {
+    .experience-list__items:nth-child(2), .experience-list__items:nth-child(4) {
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .experience-list__items {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2.5rem;
+    }
+    .experience-list__items img{
+    width: 100%;
+    }
+    
+
+  }
