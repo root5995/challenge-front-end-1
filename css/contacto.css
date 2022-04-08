@@ -39,6 +39,14 @@
     text-align: left;
 }
 
+.input-message-error {
+    margin-top: 0.5rem;
+    display: block;
+    color: rgb(167, 0, 0);
+}
+
+
+
 @media screen and (max-width: 1200px) {
     .contact .container {
         display: block;        
