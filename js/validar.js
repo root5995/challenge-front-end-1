@@ -26,15 +26,9 @@ const mensajesDeError = {
 }
 export function validar(input) {
     const tipoDeInput = input.dataset.tipo;
-    console.log(tipoDeInput)
-    console.log(input.validity)
-
     if(input.validity.valid){
         input.parentElement.classList.remove("input-container--invalid");
-        console.log(input.parentElement)
         input.parentElement.querySelector(".input-message-error").innerHTML = "";
-        console.log(input.parentElement)
-
     }else{
         input.parentElement.classList.add("input-container--invalid");
         input.parentElement.querySelector(".input-message-error").innerHTML = mostrarMensajeDeError(tipoDeInput, input);
@@ -45,9 +39,6 @@ function mostrarMensajeDeError(tipoDeInput, input){
     tipoDeErrores.forEach( error => {
         const validity = input.validity
         if(validity[error]){
-            console.log(error)
-            console.log(input.validity[error])
-            console.log(mensajesDeError[tipoDeInput][error])
             mensaje = mensajesDeError[tipoDeInput][error]
         }
     });
